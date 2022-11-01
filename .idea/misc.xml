@@ -5,11 +5,19 @@
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bg_drop_shadow.xml" value="0.1365" />
+        <entry key="app/src/main/res/drawable/ic_default.xml" value="0.1365" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.114" />
         <entry key="app/src/main/res/drawable/rectangular_blue1.xml" value="0.1365" />
+        <entry key="app/src/main/res/drawable/rectangular_blue2.xml" value="0.1365" />
         <entry key="app/src/main/res/drawable/tab_underline.xml" value="0.113" />
+        <entry key="app/src/main/res/drawable/top_rectangular.xml" value="0.1365" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/dialog_toast.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/fragment_article_details_page.xml" value="0.30637636080870917" />
+        <entry key="app/src/main/res/layout/fragment_article_list_page.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/fragment_browse_page.xml" value="0.10260416666666666" />
+        <entry key="app/src/main/res/layout/fragment_news_page.xml" value="0.10260416666666666" />
+        <entry key="app/src/main/res/layout/recycler_homearticle.xml" value="0.23802083333333332" />
       </map>
     </option>
   </component>

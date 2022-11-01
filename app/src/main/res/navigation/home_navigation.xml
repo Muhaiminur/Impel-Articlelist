@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/articlelist_fragment_page">
+    <fragment
+        android:id="@+id/articlelist_fragment_page"
+        android:name="com.impel.impelArticle.view.fragment.ArticleListPage"
+        tools:layout="@layout/fragment_article_list_page" >
+        <action
+            android:id="@+id/action_articlelist_fragment_page_to_articledetails_fragment_page"
+            app:destination="@id/articledetails_fragment_page" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articledetails_fragment_page"
+        android:name="com.impel.impelArticle.view.fragment.ArticleDetailsPage"
+        tools:layout="@layout/fragment_article_details_page" />
+</navigation>

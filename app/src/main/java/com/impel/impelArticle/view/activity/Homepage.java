@@ -11,21 +11,17 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.google.android.material.tabs.TabLayoutMediator;
-import com.google.gson.Gson;
 import com.impel.impelArticle.databinding.ActivityMainBinding;
-import com.impel.impelArticle.network.ApiService;
-import com.impel.impelArticle.network.Controller;
 import com.impel.impelArticle.utils.Utility;
 import com.impel.impelArticle.view.fragment.ArticleListPage;
 import com.impel.impelArticle.view.fragment.BrowsePage;
+import com.impel.impelArticle.view.fragment.NewsPage;
 
 public class Homepage extends AppCompatActivity {
 
     ActivityMainBinding binding;
     Context context;
     Utility utility;
-    ApiService apiInterface = Controller.getBaseClient().create(ApiService.class);
-    Gson gson = new Gson();
     // array for tab labels
     private final String[] tablabels = new String[]{"News", "Bookmark"};
     ViewPagerFragmentAdapter adapter;
@@ -43,7 +39,7 @@ public class Homepage extends AppCompatActivity {
             // bind and set tabLayout to viewPager2 and set labels for every tab
             new TabLayoutMediator(binding.tabLayout, binding.viewPager2, (tab, position) -> tab.setText(tablabels[position])).attach();
             // set default position to 1 instead of default 0
-            binding.viewPager2.setCurrentItem(1, false);
+            //binding.viewPager2.setCurrentItem(1, false);
         } catch (Exception e) {
             Log.d("Error Line Number", Log.getStackTraceString(e));
         }
@@ -67,7 +63,7 @@ public class Homepage extends AppCompatActivity {
         public Fragment createFragment(int position) {
             switch (position) {
                 case 0:
-                    return new ArticleListPage(); // article list fragment
+                    return new NewsPage(); // article list fragment
                 case 1:
                     return new BrowsePage(); // browse fragment
             }

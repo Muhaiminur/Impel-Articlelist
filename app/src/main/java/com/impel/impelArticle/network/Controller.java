@@ -11,7 +11,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Controller {
-    public static final String BASE_URL = "https://newsapi.org/v2/top-headlines/";
+    public static final String BASE_URL = "https://newsapi.org/v2/";
     private static Retrofit retrofit = null;
     ApiService api;
     private static Controller controller;
